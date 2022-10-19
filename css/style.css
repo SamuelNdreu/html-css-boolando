@@ -9,6 +9,8 @@ body{
 
 main{
     position: relative;
+    text-align: center;
+    
 }
 
 .flex{
@@ -32,6 +34,81 @@ main{
 }
 
 
+
+.discountbg-red{
+    background-color: red;
+    color: white;
+    padding: 0 0.5rem;
+    position: absolute;
+    top: 74%;
+    left: 2%;
+}
+
+.sustainables{
+    background-color: green;
+    color: white;
+    padding: 0 0.5rem;
+    position: absolute;
+    top: 74%;
+    left: 20%;
+}
+
+.sustainable-only{
+    background-color: green;
+    color: white;
+    padding: 0 0.5rem;
+    position: absolute;
+    top: 80%;
+    left: 0%;
+}
+
+
+.heart{
+    padding: 0.5rem 1rem;
+    position:absolute;
+    top:3%;
+    right: 0%;
+    font-size: xx-large;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.heart:hover{
+    color:red;
+}
+
+
+.last-left{
+    background-color: green;
+    color: white;
+    padding: 0 0.5rem;
+    position: absolute;
+    top: 80%;
+    left: 2%;
+}
+
+
+.none{
+    max-width: 300px;
+    display:none;
+    z-index: 1;
+}
+
+.change:hover .none{
+    display: block;
+}
+
+.change:hover .vanish{
+    display: none;
+}
+
+.container{
+    justify-content: space-around;
+    
+}
+
+
+
 header{
     background-color: #ff6900;
     color: white;
@@ -51,12 +128,32 @@ nav{
     padding-top: 0.75rem;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+    
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+aside ul li:hover{
+    color: #ff4800;
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 
 img.logo{
     height: 1.5rem;
 }
 
+/* div{
+  border: 2px dashed black;
+  background-color: aquamarine;
+} */
 
 section.p-row{
     width: 80%;
@@ -70,10 +167,52 @@ section.p-row{
     width:300px;
   } */
 
-div.img{
+article.img{
     position: relative;
+    display: inline-block;
+    padding: 0.4rem;
+    
 }
 
-div.img img{
+article.img img{
     max-width: 300px;
+    
 }
+
+
+footer{
+    color: white;
+    
+    background-color: #1a1a1a;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+
+}
+section.foot{
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+div.footer a{
+    font-size: 0.8rem;
+    padding: 0 .25rem 0 0;
+}
+
+aside{
+    list-style-type: none;
+    color: white;
+    line-height: 150%;
+    font-size: 1rem;
+    
+}
+aside ul li{
+display:inline-block;
+margin: 0.5rem;
+font-size: 1.5rem;
+color: white;
+
+}
+
+
